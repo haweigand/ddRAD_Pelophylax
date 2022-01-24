@@ -9,14 +9,14 @@
 
 3) Filter loci and individuals fullfilling certain quality criteria 
    
-   **filter_vcf.py**
+   **filterVcf.py**
    * input: genepop file + files to filter the file 
    * filter options (e.g. minimal number of individuals/snps, minor allele frequency)
    * output: genepop, fasta, lfmm (lea)
 
 4) Generate summary statistics from datasets with different qualtiy criteria
    
-   **summary_statistics.py**
+   **summaryStatistics.py**
    * script to generate summary statistic for parameter test based on replicated individuals 
    * input: folder with genepop files (output from filter_vcf.py)
    * settings: thresh => summary of the dataset: proportion of individuals with more SNP-calling errores than the threshold in a certain setting
@@ -29,7 +29,7 @@
 
 2) Filter loci and inidviduals with the filtering settings choosen from the parameter test
   
-   **filter_vcf.py**
+   **filterVcf.py**
    (see above)
 
 3) Run a PCA in Lea
@@ -59,11 +59,12 @@
   
    **calculateDensityPlots.py**
    * input:
-      * genepop file => should include all individuals for the plots
+      * list of individuals => individuals that should be used for the plots (same naming as in the vcf file), one row per individual
       * reflocs file (see 5)
       * vcf file (stacks export)
    * settings: coverage limit for loci to be used in the analysis (best same as in filter_vcf)
-   * output: density plots in .png and .svg format
+   * output: 
+      * density plots in .png and .svg format
+      * file with variable and fixed loci per individuals
 
- 
-   
+
