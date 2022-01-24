@@ -65,6 +65,6 @@
    * settings: coverage limit for loci to be used in the analysis (best same as in filter_vcf)
    * output: 
       * density plots in .png and .svg format
-      * file with variable and fixed loci per individuals
+      * file with number of variable and fixed loci per individuals
 
 
